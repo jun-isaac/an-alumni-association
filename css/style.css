@@ -1,0 +1,208 @@
+:root {
+	--main-color:#009688;
+	--bg-color:#ffffff;
+	--sub-color:#6a6a6a;
+	--text-color:#666666;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--text-color);
+}
+
+body {
+	margin-bottom: 80px;
+}
+
+ul{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+	/* background: #ccc; */
+}
+
+header {
+	height: 200px;
+	z-index: 999;
+	position: relative;
+}
+
+header h1 {
+	display: flex;
+	padding-top: 20px;
+	justify-content: center;
+}
+
+#gnb {
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 108px;
+}
+
+#gnb .depth1 {
+	display: flex;
+	text-align: center;
+}
+
+#gnb > .depth1 > li {
+	margin-left: 50px;
+	margin-right: 50px;
+	text-align: center;
+}
+
+#gnb > .depth1 > li > a {
+	display: block;
+	padding: 10px;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+#gnb > .depth1 > li > a:hover {
+	color: var(--main-color)
+}
+
+#gnb .depth2 {
+	opacity: 0;
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+#gnb .depth2.on {
+	opacity: 1;
+}
+
+#gnb .depth2 > li{
+	background: var(--bg-color);
+}
+
+#gnb .depth2 > li > a {
+	display: block;
+	padding: 8px;
+	background: var(--bg-color);
+}
+
+#gnb .depth2 > li > a:hover {
+	background: #ccc;
+}
+
+.slider {
+	overflow: hidden;
+}
+
+.sliders {
+	display: flex;
+	transition: 0.5s;
+}
+
+#contents {
+	height: 500px;
+	/* outline: 2px solid red; */
+}
+
+#contents .row {
+	display: flex;
+}
+
+.row {
+	border-bottom: 1px solid var(--sub-color);
+}
+
+.notice {
+	position: relative;
+}
+
+.notice h2 {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.notice ul {
+	margin-top: 60px;
+	margin-left: 10px;
+}
+
+.notice li {
+	display: flex;
+	margin-bottom: 16px;
+	justify-content: space-between;
+}
+
+.notice li a:hover {
+	color: var(--main-color)
+}
+
+#partner {
+	position: relative;
+}
+
+#partner h2 {
+	position: absolute;
+	top: 10px;
+}
+
+#partner > a > img {
+	position: absolute;
+	top: 65px;
+	left: 50px;
+}
+
+#partner > a > p {
+	margin-top: 240px;
+	margin-left: 30px;
+}
+
+#icon {
+	display: flex;
+}
+
+#icon .col{
+	width: calc(960px / 3);
+	text-align: center;
+}
+
+#icon .col img {
+	margin-top: 40px;
+}
+
+#icon .col p {
+	font-size: 24px;
+	margin-top: 30px;
+}
+
+footer {
+	position: relative;
+	height: 150px;
+	background: rgb(234, 234, 234);
+	/* outline: 2px solid #ccc; */
+}
+
+footer > a {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+
+.copy {
+	text-align: right;
+	position: absolute;
+	top: 45px;
+	right: 30px;
+}
+
+.tel {
+	text-align: right;
+	position: absolute;
+	top: 90px;
+	right: 30px;
+}
